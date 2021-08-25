@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*FONDO PRINCIPAL*/
+
+.fondo{
+        background-image: url(../img/shutterstock_301513997.jpg);
+        background-position: center;
+        width: 100%;
+        height: 740px;
+        background-size:cover;
+        background-repeat: no-repeat;
+}
+
+
+/*MENU*/
+
+li.nav-item{
+    margin-right: 20px;
+    font-family: montBold;
+}
+
+/*CONTENEDOR 1 PAGINA PRINCIPAL*/
+.contenedor1{
+padding: 19px;
+padding-top: 20px;
+border: 1px solid black;
+
+}
+.promo1, .promo2, .promo3{
+    text-align: center;
+    animation: zoomIn;
+    animation-duration: 4s; 
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1)
+
+}
+/*CONTENEDOR CONTACTOS*/
+
+.container{
+    padding-top: 0px;
+    margin-top: 0px;
+    
+}
+
+.contacto{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+
+/*PRODUCTOS DESTACADOS*/
+
+.productos__destacados{
+    text-align: center;
+    font-size: 3em;
+    border:1px solid black;
+    margin-bottom: 0%;
+    padding-bottom: 15px;
+    padding-top:15px;
+    font-family: montAlt;
+}
+/*CAROUSEL*/
+
+/*FUENTE CAROUSEL*/
+
+.carousel-caption{
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding:0%;
+    margin: 0%;
+}
+
+
+/*CONTROLES CAROUSEL*/
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+
+    height: 40px;
+    width: 40px;
+}
+
+/*FONDO CAROUSEL*/
+
+.micaru{
+    background-color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:40px;
+    padding-bottom: 40px;
+
+}
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+justify-content: space-around;;
+padding-top: 30px;
+background-color: rgb(205, 252, 205);
+padding-bottom: 20px ;
+border: 1px solid grey;
+}
+
+.footer__navegacion{
+    background-color: rgb(205, 252, 205);
+    height: 17em;
+    width: 20em;
+    text-align: center;
+}
+ 
+.contenido__contacto{
+ text-align: center;
+ font-size: 7px;
+ padding-bottom: 0%;
+ padding-top: 0%;
+
+}
+ul .contenido__contacto {
+    line-height: 2px;
+    font-size: 7px;
+}
+
+.contenido__navegacion{
+    list-style: none
+}
+
+.footer__mapa{
+    background-color: rgb(205, 252, 205) ;
+    height: 17em;
+    width: 20em;;
+}
+.mapa{
+    height: 11em;
+    width: 20em;
+}
+.footer__contacto{
+    background-color: rgb(205, 252, 205);
+    height: 17em;
+    width: 20em;
+    text-align:justify;
+
+}
+.contenido__contacto{
+    list-style: none;
+    line-height: 2px;
+
+    font-size: 12.5px;
+}
+
+.titulo__navegacion, .titulo__mapa, .titulo__contacto{
+    text-align: center;
+    font-family: mont;
+    font-size: 20px;
+}
+
+/*ESTILOS DE FUENTES*/
+
+@font-face {
+    font-family: rale;
+    src: url(../fuentes/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: mont;
+    src: url(../fuentes/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: montAlt;
+    src: url(../fuentes/MontserratAlternates-Light.ttf);
+}
+@font-face {
+    font-family:montBold ;
+    src: url(../fuentes/Montserrat-Bold.ttf);
+}
+/*VETERINARIA*/
+
+.titulo__veterinaria{
+font-size: 4em;
+color: #ffffff;
+font-family: montBold;
+text-shadow: 7px 7px 0 #0a0e27;
+padding-top: 2em;
+position: absolute;
+}
+
+#veteFoto{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/vete.jpg) ;
+    background-size: cover;
+    position: relative;
+
+}
+
+#veteFoto:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.servicioVt{
+    background-color: grey;
+    background-size: cover;
+    padding: 60px 0;
+}
+.innerWidth{
+        width: 100%;
+        max-width: 1200px;
+        margin:auto;
+        padding: 0px 20px;
+    
+}
+.tituloServ{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: montBold;
+}
+
+.contServ{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.cajaServ{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.iconoServ{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid lightgreen;
+    color: lightgreen;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+
+}
+.iconoServ i{
+    line-height: 65px;
+    font-size: 40px;
+    transform: rotate(-45deg);
+}
+.cajaServ:hover .iconoServ{
+    background: lightgreen;
+    color: black
+
+}
+.tituloServ{
+    font-size: 20px;
+    margin-bottom: 10px;
+    ;
+}
+.descServ{
+    color: white;
+    font-size: 15px;
+    font-family: montAlt;
+}
+.inst{
+    margin-bottom: 0%;
+    background-color: grey;
+    color: white;
+text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: montBold;
+    padding-bottom: 10px;
+}
+.descInst{
+    color: white;
+    background-color: grey;
+    text-align: center;
+    margin-bottom: 0%;
+    font-family: montAlt;
+}
+.micaru2{
+    background-color: grey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*TRAYECTORIA*/
+
+.contenedorTrayectoria{
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding-bottom: 50px;
+}
+h3.text-center{
+    font-family: montBold;
+
+}
+p.text-center{
+    font-family: montAlt;
+}
+
+
+.img-fluid{
+    max-width: 100%;
+    height: auto; 
+}
+
+/*PELUQUERIA*/
+
+
+.titulo__peluqueria{
+    font-size: 4em;
+    color: #ffffff;
+    font-family: montBold;
+    text-shadow: 7px 7px 0 #0a0e27;
+    padding-top: 2em;
+    position: absolute;
+    }
+    
+    .header__peluqueria{
+        width: 100%;
+        height: 400px;
+        background-image: url(../img/pelu1.jfif) ;
+        background-size: cover;
+        position: relative;
+    
+    }
+    
+    .header__peluqueria:before {
+        content:'';
+        position: absolute;
+            top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+.contenedorPeluqueria{
+    border: 1px solid black;
+    background-color: rgb(248, 195, 175);
+    padding-bottom: 50px;
+}
+h3.text-center{
+    font-family: montBold;
+
+}
+p.text-center{
+    font-family: montAlt;
+}
+
+
+.img-fluid{
+    max-width: 100%;
+    height: auto; 
+
+}
+.tituloServPelu{
+    text-align: center;
+    font-size: 3em;
+    font-family: montAlt;
+    border:1px solid black;
+    border-top: none;
+    margin-bottom: 0%;
+}
+.tituloCaruPelu{
+    padding:15px;
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid black;
+    font-family: montAlt;
+    margin-bottom: 0%;
+}
+.micaru3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(248, 195, 175);
+}
+
+.banioPelu{
+    background-color: rgb(248, 195, 175);
+    padding-top: 30px;
+    border-bottom: 1px solid pink;
+}
+h1.text-center{
+    font-family: mont;
+    font-size: 30px;
+    padding-bottom: 10px;
+   
+}
+/*PRODUCTOS Y SERVICIOS PAGINA PRINCIPAL*/
+
+.contenedorServiciosIndex{
+    background-color:lightgray;
+    margin-top: 0px;
+    padding-bottom: 60px
+    }
+    
+    .subcontenedorServiciosIndex{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top:60px
+    }
+    
+    .service-card{
+    width: 33%;
+    margin: 10px 0
+    }
+    
+    .service-card h4{
+    font-size: 32px;
+    font-weight: 300px;
+    line-height: 1.5;
+    color: #fff;
+    }
+    .visitaTexto{
+        padding:50px;
+        font-family: mont;
+    }
+    
+    
+    .service-card .bg-light{
+    background-color: lightgray;
+    
+   
+    }
+    div .heading h5{
+        padding-left: 30px;
+    }
+    
+    .d-flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px
+    }
+    
+    .service-card .icon{
+        margin-right: 15px;
+
+    }
+    .service-card .icon img{
+        height: 80px;
+    }
+    .service-card .heading h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    
+    .service-card .info{
+    color: #8090b5;
+    line-height: 1.7;
+    text-align: center;
+    font-size: 18px;	
+    }
+    
+    .service-card .info-link{
+        color: #8090b5;
+        font-size: 12px
+    }
+    div .info p{
+        padding-top: 10px;
+    
+    }
+   
+    /***********/
+    
+    @media (max-width: 768px){
+    .service-wrp {
+    padding: 40px 15px;
+    margin-top: 0
+    }
+    
+    .service-card h4 {
+    font-size: 26px;
+    line-height: 1.3;
+    }
+    
+    .service-wrp-inner {
+    flex-direction: column;
+    }
+    
+    .service-card {
+    width: 100%;
+    margin: 10px 0px;
+    }
+    
+    /****/
+    }
+
+/*MEDIA*/
+
+@media screen and (max-width:960px) {
+    .cajaServ{
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .cajaServ{
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cajaServ{
+        max-width: 100%;
+    }
+}

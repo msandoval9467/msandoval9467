@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./style/estilos.css">
+    <!--ANIMACIONES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Peluquería</title>
+</head>
+
+<body>
+      <!---menu con dropdowns-->
+      <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo2.jpg" height="90px">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="productos-perros.html" target="_blank"> Productos para perros <i class="fas fa-dog"></i></a>
+                            <a class="dropdown-item" href="productos-gatos.html" target="_blank"> Productos para gatos <i class="fas fa-cat"></i></a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="veterinaria.html" target="_blank">Veterinaria <i class="fas fa-clinic-medical"> </i></a>
+                                <a class="dropdown-item" href="peluqueria.html" target="_blank"> Peluquería <i class="fas fa-shower"></i></a>
+                            </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mi-cuenta.html">Mi cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="header__peluqueria">
+        <p class="titulo__peluqueria">Peluquería canina</p>
+    </div>
+    <div class="contenedorPeluqueria">
+        <div class="container-fluid" style="padding-top:50px">
+            <div class="row">
+                <aside class="col-md-4 offset-md-2" style="padding-top:70px">
+                    <h3 class="text-center">
+                        ¡Limpios, peinados y felices!</h3>
+                    <p class="text-center">En 30 minutos dejamos a tu mascota impecable y lista para volver a casa.
+                    </p>
+                </aside>
+                <div class="col-md-4">
+                    <img src="./img/bano1.jpg" class="imgPelu img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--TITULO SERVICIOS PELUQUERIA-->
+    <p class="tituloServPelu">Nuestros servicios</p>
+
+<!--DETALLE SERVICIOS-->
+<div class="banioPelu">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 offset-md-2">
+            <h1 class="text-center">Baño</h1>
+            <img src="img/bano2.jpg" alt="imagen" class="img-fluid">
+            <p class="text-center">Incluye baño con shampoo natural, secado, corte a máquina y/o tijera, peinado, limpieza de oídos y corte de uñas.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <h1 class="text-center">Peluquería</h1>
+            <img src="img/pelu2.jpg" alt="imagen" class="img-fluid">
+            <p class="text-center">Se realizan cortes a máquina y/o tijera, peinados según raza.</p>
+        </div>
+    </div>
+</div>
+</div>
+<!--CAROUSEL PELUQUERIA-->
+<p class="tituloCaruPelu">Te mostramos los antes y después de nuestros clientes <i class="fas fa-paw"></i></p>
+
+  <!-- CAROUSEL-->
+  <div class="micaru3">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+
+
+                <div id="miCarousel" class="carousel slide" data-ride="carousel">
+
+
+
+                    <!--SLIDES-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/corte1.jpg" class="d-block w-100">
+
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <img src="./img/corte2.jpg" class="d-block w-100" alt="...">
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <img src="img/corte3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                    <!--CONTROLES-->
+                    <a class="carousel-control-prev" href="#miCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#miCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     <!--FOOTER-->
+
+     <footer class="footer">
+        <div class="footer__navegacion">
+            <p class="titulo__navegacion">Navegación</p>
+            <ul class="contenido__navegacion">
+                <li> <a href="navegacion.html" style="color:black;"target="_blank"><p class="sobreNosotros">Sobre nosotros</p></a></li>
+                <li> <a href="navegacion.html"style="color:black"target="_blank"><p class="comoComprar">Cómo comprar</p></a></li>
+                <li><a href="navegacion.html"style="color:black"target="_blank"><p class="preguntasFrecuentes">Preguntas frecuentes</p></a></li>
+            <li><a href="navegacion.html"style="color:black"target="_blank"><p class="pagoyEnvios">Formas de pago y envíos</p></a></li>
+                <li><a href="navegacion.html"style="color:black"target="_blank"><p class="cambiosyDev">Cambios y devoluciones</p></a></li>
+            </ul>
+        </div>
+        <div class="footer__mapa">
+            <p class="titulo__mapa">¿Dónde estamos?</p>
+            <p class="footer___direccion text-center">
+                Av. Corrientes 1602, CABA
+            </p>
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9980475457955!2d-58.39156618481365!3d-34.604210880459355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac15063872f%3A0x6d8c79acc251064b!2sAv.%20Corrientes%201602%2C%20C1042AAP%20CABA!5e0!3m2!1ses-419!2sar!4v1628795625445!5m2!1ses-419!2sar"
+                 style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer__contacto">
+            <p class="titulo__contacto">Contacto</p>
+            <ul class="contenido__contacto">
+              <li><p class="ws">WhatsApp <i class="fab fa-whatsapp"></i></p></li>
+                <li>+5491122334455</li>
+            </li>
+            <hr>
+                <li> <p class="tel__contacto">Atención telefónica <i class="fas fa-phone"></i></p></li>
+                    <li>0800-123-4567</li>
+                 </li>
+                 <hr>
+                <li><p class="mail__contacto">E-mail <i class="far fa-envelope"></i></p></li>
+                    <li> info@tierpetshop.com </li>
+                    <hr>
+                <li><p class="horarios__contacto">Horarios de atención <i class="fas fa-store-alt"> </i></p></li>
+                   <li> Lunes a Sábados 8 a 20 hs. Domingos y feriados 8 a 16 hs </li>
+                
+            </ul>
+        </div>
+    </footer>
+    <!--script bootstrap/JS-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <!--FIN DE SCRIPT-->
+</body>
+
+</html>
